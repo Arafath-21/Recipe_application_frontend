@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 import { useFormik } from "formik";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Slide, Zoom, Flip, Bounce } from "react-toastify";
-import { login, loginUser } from "../ApiRequest/ApiRequest";
+import {  Bounce } from "react-toastify";
+import { login } from "../ApiRequest/ApiRequest";
 function Login() {
   const navigate = useNavigate();
 

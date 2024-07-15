@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Slide, Zoom, Flip, Bounce } from "react-toastify";
+import {  Bounce } from "react-toastify";
 import { registerUser } from "../ApiRequest/ApiRequest";
 
 function Signup() {

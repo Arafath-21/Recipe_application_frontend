@@ -25,10 +25,10 @@ const [id, setId] = useState("");
                 setPreviewModal(true);
               }}
             >
-              <img src={get.recipeImage} />
+              <img src={get.recipeImage} alt="baa" />
               <div className="float floattwo">
               <div>
-                <img src={get.profileImage}/>
+                <img src={get.profileImage} alt="baa"/>
               <p>{get.userName}</p>
               </div>
                 <p>{get.title}</p>

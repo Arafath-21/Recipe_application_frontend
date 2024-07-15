@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Card from '../ProfileModel/Card'
 import { getPost } from '../../ApiRequest/ApiRequest';
-import { Link } from 'react-router-dom'
 import CommunityCard from './CommunityCard';
 
 
@@ -9,7 +7,7 @@ import CommunityCard from './CommunityCard';
 const Post=()=> {
 const[allPosts,setAllPosts]=useState([])
 
-const [loading,setLoading]=useState(false)
+
 // const [allPost,setAllPost]=useState(null)
 
 const[searchText,setSearchText]=useState("")

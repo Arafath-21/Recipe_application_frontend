@@ -4,9 +4,7 @@ import { getUser } from "../ApiRequest/ApiRequest";
 import { UserContext } from "../UseContext";
 import "./Home.css";
 import { Outlet, useNavigate } from "react-router-dom";
-import Navbar from "../Component/Navbar/Navbar";
-import Profile from "../Component/Profile/Profile";
-import Post from "../Component/Posts/Post";
+import Navbar from "../Component/Navbar/Navbar";;
 // import Logo from "../img/logo2.png";
 
 const Home = () => {

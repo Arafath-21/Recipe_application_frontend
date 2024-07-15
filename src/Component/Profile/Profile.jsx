@@ -2,17 +2,17 @@ import React, { useContext, useState } from 'react'
 import { UserContext } from '../../UseContext';
 import dpic from "../../Assets/dprofile.png";
 import dcover from "../../Assets/dcover.png";
-import { MdOutlineTipsAndUpdates } from "react-icons/md";
+// import { MdOutlineTipsAndUpdates } from "react-icons/md";
 import "./Profile.css"
-import Post from '../Posts/Post';
+// import Post from '../Posts/Post';
 import Card from '../ProfileModel/Card';
 import ProfileModal from '../ProfileModel/ProfileModal';
-import { useNavigate } from 'react-router-dom';
-import { MantineProvider } from '@mantine/core';
+// import { useNavigate } from 'react-router-dom';
+// import { MantineProvider } from '@mantine/core';
 import { MdFoodBank } from "react-icons/md";
 import CreateRecipe from '../ProfileModel/CreateRecipe';
 import { MdTipsAndUpdates } from "react-icons/md";
-import { IoAppsSharp } from "react-icons/io5";
+// import { IoAppsSharp } from "react-icons/io5";
 
 
 

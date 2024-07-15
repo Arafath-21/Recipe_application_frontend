@@ -51,7 +51,7 @@ SetDisplayData(get.data.otherDetails);
         };
         getUserRecipe()
               
-      },userId);
+      },[userId]);
     
   return (
    <>
@@ -90,19 +90,7 @@ loadingData?<>
         <div className='Follow'>
             <span><span>Working As: </span>{displayData.workingAs}</span>
         </div>
-        {/* <hr />
-
-        <div>
-          <div className="Follow">
-            <span>{displayData.following.length}</span>
-            <span>Followings</span>
-          </div>
-          <div className="vl"></div>
-          <div className="Follow">
-            <span>{displayData.followers.length}</span>
-            <span>Followers</span>
-          </div>
-        </div> */}
+        
         <hr />
       </div>
     
@@ -128,7 +116,7 @@ loadingData?<>
           setId(get._id);
           setPreviewModal(true)}}>
       <img 
-      src={get.recipeImage}
+      src={get.recipeImage} alt='aa'
       />
       <div className='float'>
 <p >

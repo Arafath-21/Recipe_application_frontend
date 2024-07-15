@@ -2,10 +2,6 @@ import React, { useContext } from "react";
 import { useState } from "react";
 import { dltRecipe } from "../../ApiRequest/ApiRequest";
 import { UserContext } from "../../UseContext";
-import { ToastContainer, toast } from "react-toastify";
-import { Slide, Zoom, Flip, Bounce } from "react-toastify";
-import { dRecipe } from "./PreviewRecipe";
-
 function DeleteRecipe({ get,setPreviewModal, setOpenEdit, setOpenDlt }) {
   const {  setData,setForLoad } = useContext(UserContext);
 

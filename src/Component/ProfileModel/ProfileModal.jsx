@@ -3,8 +3,7 @@ import axios from "axios";
 import { useContext, useEffect, useRef, useState } from "react";
 import { removeImage, UpdateUser } from "../../ApiRequest/ApiRequest";
 import { UserContext } from "../../UseContext";
-import { ToastContainer, toast } from "react-toastify";
-import { Slide, Zoom, Flip, Bounce } from "react-toastify";
+import { toast } from "react-toastify";
 import "../../Loading.css"
 
 

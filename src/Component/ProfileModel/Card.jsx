@@ -12,7 +12,7 @@ import { IoIosEyeOff } from "react-icons/io";
 import { IoIosEye } from "react-icons/io";
 import PreviewRecipe from './PreviewRecipe';
 import { ToastContainer, toast } from "react-toastify";
-import { Slide, Zoom, Flip, Bounce } from "react-toastify";
+import { Bounce } from "react-toastify";
 
 
 
@@ -27,24 +27,7 @@ const Card = ({_id,userName,title,photo}) => {
 
 
   useEffect(() => {
-//     setLoadingData(false);
-
-//     const getUserRecipe = async () => {
-//       try {
-
-//         const get = await getUserRecipeOnly(loginUser._id);
-// if(get.data.message === "finded"){
-//   setData(get.data.find);
-
-// }
-//         setLoadingData(true);
-//       } catch (error) {
-//         console.log(error);
-//       }
-//     };
-//     getUserRecipe();
-// const toast=()=>{
-          
+         
            if(forLoad!==""){
             toast.success("Recipe deleted Successfull", {
               position: "top-center",
@@ -58,9 +41,7 @@ const Card = ({_id,userName,title,photo}) => {
             });
             setForLoad("")
            }
-// }
 
-// toast()
   }, [forLoad]);
 
   useEffect(() => {

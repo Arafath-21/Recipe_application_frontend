@@ -1,20 +1,9 @@
 import { Modal, useMantineTheme } from "@mantine/core";
-import axios from "axios";
-import { useContext, useEffect, useRef, useState } from "react";
-import { UserContext } from "../../UseContext";
-import { useFormik } from "formik";
-import { useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
-import { Slide, Zoom, Flip, Bounce } from "react-toastify";
 import "../../Loading.css"
 
 
 function OtherPreviewRecipe({get, previewModal, setPreviewModal }) {
-    const navigate = useNavigate();
-
-    
-
-  const { setLoginUser,loginUser ,setData} = useContext(UserContext);
+  
   const theme = useMantineTheme();
 
 

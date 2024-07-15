@@ -1,0 +1,158 @@
+.HomeParent {
+  padding: 0.5rem 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 0;
+  padding-right: 0;
+
+  min-height: 100vh ;
+}
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: var(--buttonBg);
+  color: white;
+  padding: 0.5rem;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+.navpair > :first-child {
+  color: #f5f5f5;
+  cursor: pointer !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  z-index: 4;
+}
+.navpair > :first-child {
+  color: #ffffff;
+}
+
+.Home {
+  /* position: relative; */
+  display: flex;
+  /* grid-template-columns: 90vw ; */
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: fit-content;
+
+}
+
+.securityerr {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  gap: 1rem;
+}
+.securityerr > .a-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.securityerr > h2 {
+  cursor: pointer;
+}
+.logohide {
+  display: flex;
+}
+.Webname{
+  /* text-align: center; */
+}
+.Webname>h1{
+  background-color: var(--buttonBg) ;
+  font-size: 1.8rem;
+
+}
+.navpair {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link_tag{
+  color: white;
+  text-decoration: none;
+}
+.link_tag:hover{
+  color: white !important;
+}
+._link:hover{
+color: var(--buttonBg);
+}
+._link{
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .logohide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    z-index: 4;
+    position: relative;
+    margin-bottom: 2.5vw;
+  }
+  .logohide > img {
+    width: 25vw;
+  }
+  .logohide > .Webname > h1 {
+    font-size: 7vw;
+  }
+  .logohide > .Webname > h6 {
+    font-size: 2.5vw;
+    margin-top: 0.5vw;
+  }
+  .HomeParent {
+    height: fit-content !important;
+    /* padding: 1rem; */
+    gap: 1rem;
+  }
+  .Navbar {
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: fit-content;
+    flex-wrap: wrap;
+    gap: 1.5vw;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+    width: fit-content;
+    width: 100vw;
+  }
+  .Navbar>:first-child{
+    width: 100%;
+  }
+  .navpair {
+    position: sticky !important;
+    top: 0 !important;
+  }
+  .navpair > :first-child {
+    font-size: 2.5vw;
+    gap: 1.5vw;
+  }
+  .Home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .securityerr > h2 {
+    font-size: 5vw;
+  }
+}

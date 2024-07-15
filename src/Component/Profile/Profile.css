@@ -1,0 +1,181 @@
+.profile_overall{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  margin-top: 11vh;
+}
+.ProfileCard,.posts {
+    border-radius: 2vw;
+    display: flex;
+    /* height: fit-content; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+  
+    width: 60%;
+    background-color: var(--cardColor);
+    /* background-color: #fd507e; */
+  }
+  .ProfileImages {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .ProfileImages > img:nth-of-type(1) {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+    overflow: hidden;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+  }
+  .ProfileImages > img:nth-of-type(2) {
+    background-color: white;
+    width: 12vw;
+    height: 12vw;
+    border: 0.2vw solid white;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -6vw;
+    box-shadow: var(--profileShadow);
+  }
+  .ProfileName {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6.5vw;
+    font-size: 1.5vw;
+  }
+  .ProfileName > span:nth-of-type(1) {
+    font-weight: bold;
+  }
+  .FollowStatus {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vw;
+    font-size: 1.2vw;
+    /* font-style: italic; */
+  }
+  .FollowStatus > hr {
+    width: 65%;
+    border: 0.1vh solid var(--hrColor);
+    background-color: var(--hrColor);
+  }
+  .FollowStatus > div {
+    display: flex;
+    gap: 1rem;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .Follow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5vw;
+  }
+  .Follow > span:nth-of-type(1) {
+    /* font-weight: bold; */
+  }
+  .Follow > span:nth-of-type(2) {
+    color: var(--gray);
+    font-size: 1.5vw;
+  }
+  .vl {
+    height: 100%;
+    border: 0.1vh solid var(--hrColor);
+    background-color: var(--hrColor);
+  }
+  .ProfileCard > span {
+    font-weight: bold;
+  
+    color: #c70035;
+    align-self: center;
+    cursor: pointer;
+  }
+  .posts{
+    padding: 1vw;
+  }
+  .posts>:nth-child(1){
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5vw;
+    color: #c70035;
+    font-weight: bold;
+    
+  }
+  .edit:hover{
+    cursor: pointer;
+  }
+  .edita{
+    color: var(--gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5vw;
+    font-weight: bold;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .profile_overall{
+      margin-top: 12vh;
+    }
+    .ProfileCard {
+      width: 90%;
+      border-radius: 4vw;
+    }
+    .ProfileImages > img:nth-of-type(1) {
+      border-top-left-radius: 4vw;
+      border-top-right-radius: 4vw;
+      height: 35vw;
+    }
+    .ProfileImages > img:nth-of-type(2) {
+      width: 20vw;
+      height: 20vw;
+      bottom: -10vw;
+      border: 0.5vw solid white;
+    }
+    .ProfileName {
+      margin-top: 10vw;
+      font-size: 3.5vw;
+    }
+    .FollowStatus {
+      font-size: 3vw;
+    }
+    .Follow > span:nth-of-type(2) {
+      font-size: 3vw;
+    }
+    .edit {
+      font-size: 3vw;
+      gap: 0.2rem;
+    }
+    .posts{
+      width: 90%;
+    }
+    
+  }
+  

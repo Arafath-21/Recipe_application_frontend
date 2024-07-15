@@ -37,6 +37,7 @@ const Home = () => {
 //   console.log(localStorage.getItem("ticket"));
   return (
     <>
+      <h1>This runs slowly as it got deployed in render</h1>
       {loadingData ? (
         <>
           <div className="HomeParent">
